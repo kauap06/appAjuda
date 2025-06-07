@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissões necessárias -->
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/> <!-- Permissão para serviços em primeiro plano -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/><!-- Permissão para localização em serviços em primeiro plano -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/vitapp_icon"
+        android:label="VITAPP"
+        android:theme="@style/Theme.AppAjuda"
+        tools:targetApi="31">
+
+        <activity android:name=".MainActivity" android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SaveNumberActivity" android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="false" />
+
+        <service
+            android:name=".GyroService"
+            android:foregroundServiceType="location"
+            android:permission="android.permission.FOREGROUND_SERVICE"
+            android:exported="false" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+    </application>
+
+</manifest>

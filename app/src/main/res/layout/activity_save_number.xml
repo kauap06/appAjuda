@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    tools:context=".SaveNumberActivity">
+
+    <!-- Título -->
+
+    <TextView
+        android:id="@+id/textoaddNumber"
+        android:layout_width="345dp"
+        android:layout_height="109dp"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:text="Informe o Número De Emergencia"
+        android:textColor="#433878"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="355dp"
+        android:layout_height="51dp"
+        android:background="@drawable/input_style"
+        android:drawableTint="#FAFAFA"
+        android:ems="10"
+        android:fontFamily="@font/poppins_light"
+        android:hint="Exemplo: (99) 9999-9999"
+        android:inputType="phone"
+        android:paddingStart="12dp"
+        android:textColor="#ffff"
+        android:textColorHint="@color/hintColor"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.348" />
+
+    <!-- Ícone da Aplicação -->
+
+    <!-- Texto para Número Ativo -->
+
+    <!-- RecyclerView para listar os números cadastrados -->
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="126dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#433878"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Salvar"
+        android:textColor="#ebf4f6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.453" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="211dp"
+        android:layout_height="142dp"
+        android:layout_marginBottom="620dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logoapp" />
+
+    <TextView
+        android:id="@+id/textNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="start"
+        android:text="Número ativo: Nenhum"
+        android:textColor="#433878"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewNumbers"
+        android:layout_width="368dp"
+        android:layout_height="208dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_op"
+        android:clipToPadding="false"
+        android:elevation="4dp"
+        android:fontFamily="@font/poppins_light"
+        android:overScrollMode="never"
+        android:padding="8dp"
+        android:scrollbars="vertical"
+        android:textColor="#433878"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.809" />
+
+    <FrameLayout
+        android:id="@+id/btnVoltar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_bola"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/back" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apagar Número Ativo"
+        android:textColor="#ffff"
+        android:backgroundTint="#b50000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.961" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
