@@ -1,38 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="10dp"
-    android:elevation="4dp"
-    android:radius="8dp"
-    android:backgroundTint="#FFC6FF">
+    android:radius="0dp"
+    android:backgroundTint="#433878"
+    app:cardElevation="0dp">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="56dp"
+        android:background="@drawable/list_rounded_bg"
         android:orientation="horizontal"
-        android:padding="16dp">
+        android:padding="4dp">
 
         <ImageView
             android:id="@+id/phoneIcon"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:src="@drawable/ic_phone"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
             android:layout_marginEnd="10dp"
-            android:contentDescription="Ícone de telefone" />
+            android:layout_marginStart="12dp"
+            android:contentDescription="Ícone de telefone"
+            android:src="@drawable/ic_phone" />
 
         <TextView
             android:id="@+id/textNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:textColor="#433878"
             android:layout_gravity="center_vertical"
-            android:fontFamily="@font/poppins_bold"
-            android:text="(99) 99999-9999"
             android:ellipsize="end"
-            android:maxLines="1" />
+            android:fontFamily="@font/poppins_light"
+            android:maxLines="1"
+            android:text="(99) 99999-9999"
+            android:layout_marginTop="2dp"
+            android:textColor="#433878"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/btnDelete"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_weight="1"
+            android:layout_marginStart="125dp"
+            app:srcCompat="@drawable/btn_delete" />
 
     </LinearLayout>
 </androidx.cardview.widget.CardView>

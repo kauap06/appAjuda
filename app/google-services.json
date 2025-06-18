@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "806838020501",
+    "project_id": "vitapp-e0d82",
+    "storage_bucket": "vitapp-e0d82.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806838020501:android:bc50a00c74ea973d3cee9c",
+        "android_client_info": {
+          "package_name": "com.example.appajuda"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARoE3Nc0RzpCTEulSyjk49KCChCb-f_rg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

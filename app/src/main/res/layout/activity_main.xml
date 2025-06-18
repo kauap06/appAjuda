@@ -10,14 +10,16 @@
 
     <ImageView
         android:id="@+id/fundo_Fade"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/fundo_fade"
-        android:layout_width="wrap_content" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/fundo_fade" />
 
     <TextView
         android:id="@+id/textoHome"
@@ -37,8 +39,8 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="211dp"
-        android:layout_height="143dp"
+        android:layout_width="150dp"
+        android:layout_height="81dp"
         android:layout_marginBottom="616dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,26 +48,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/logoapp" />
-
-    <FrameLayout
-        android:id="@+id/btnSalvar"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:background="@drawable/button_bola"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023">
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            app:srcCompat="@drawable/tel" />
-    </FrameLayout>
 
     <ImageView
         android:id="@+id/pm"
@@ -91,6 +73,7 @@
         app:layout_constraintVertical_bias="0.631"
         app:srcCompat="@drawable/btn_civil" />
 
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="71dp"
@@ -111,8 +94,8 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="141dp"
-        android:layout_height="22dp"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
         android:fontFamily="@font/poppins_light"
         android:gravity="center"
         android:text="Policia Cívil"
@@ -122,10 +105,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintHorizontal_bias="0.131"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.713" />
+        app:layout_constraintVertical_bias="0.716" />
 
     <ImageView
         android:id="@+id/bombeiro"
@@ -193,15 +176,16 @@
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.162"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.875"
+        app:layout_constraintVertical_bias="0.865"
         app:srcCompat="@drawable/gps" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="243dp"
-        android:layout_height="38dp"
+        android:layout_width="162dp"
+        android:layout_height="56dp"
         android:fontFamily="@font/poppins_light"
         android:gravity="center"
         android:text="Localização Emergencial"
@@ -210,8 +194,51 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.943" />
+        app:layout_constraintVertical_bias="0.96" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="188dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="center"
+        android:text="Comando por voz"
+        android:textColor="#433878"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.959"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.942" />
+
+    <ImageView
+        android:id="@+id/btnVoiceCommand"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.87"
+        app:srcCompat="@drawable/voz" />
+
+    <ImageView
+        android:id="@+id/btnSalvar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/btn_num" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
